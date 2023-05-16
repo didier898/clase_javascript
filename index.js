@@ -37,3 +37,64 @@ let nombre_completo= "didier silva amador "
 //constantes 
 const PI =3.1416;
 const COLOR="rojo";
+
+//tipos de datos 
+
+//tipo de dato Number 
+
+let n=123;
+console.log(n);
+
+
+//valores numericos especiales, infinity y NaN 
+
+console.log(1/0)
+
+// NaN representa un error de calculo pero no es un error de javascript 
+// infinity no es un error, es un valor numerico de havascript 
+
+console.log("texto"/2);
+
+//cualquier operacion con nan devuelve nan 
+
+//tipo string 
+
+let t='a'
+let c= "a"
+let d=  `s ` //backtik se usa para interpolacion 
+console.log('roberto alias "robert"')
+
+// tipo booleano 
+//true false
+
+let verdadero = true 
+let falso=false 
+let mayor=4>5
+
+//valor null
+//valor especial que no pertenece a ningun tipo de dato 
+//forma un tipo propio separado que contiene solo el valor de null
+
+let edad=null; 
+console.log(edad)
+
+// en js null no significa un objeto no existente 
+// es un valor especial que significa nada, vacio o desconocido
+
+// valor undefined 
+// undefined significa valor no asignado 
+
+let valor_no_asigned;
+console.log(valor_no_asigned)
+
+//operador typeof o funcion typeof(x)
+
+console.log(typeof(undefined))  // undefined 
+console.log(typeof(0)) //number
+console.log(typeof(true)) //bolean
+console.log(typeof(3.1416)) //number
+console.log(typeof("hola mundo")) // string
+console.log(typeof(alert)) // funcion 
+console.log(typeof(null)) //object error de javascript porque null no significa un objeto existente 
+
+

@@ -97,4 +97,67 @@ console.log(typeof("hola mundo")) // string
 console.log(typeof(alert)) // funcion 
 console.log(typeof(null)) //object error de javascript porque null no significa un objeto existente 
 
+//conversion de tipos 
+
+//convertir string 
+let valor=true;
+valor=string(valor); //"true"
+valor=string(false); //"false"
+valor=string(null); //"null"
+valor=string(undefined); //"undefined"
+
+//conversion a number 
+
+//conversiones numericas ocurren automaticamente en funciones matematicas y expresiones 
+
+console.log('6'/'2') // 3
+console.log(1+'2') //12
+console.log('1'+2) //12
+
+valor=number(undefined) //NaN
+valor=number(null)  //0
+valor=number(true) //1
+valor=number(false) //0
+valor= number('') //0
+valor=number('hola mundo') //NaN
+
+valor=boolean('') //false
+valor=boolean('gh') //true 
+
+
+//tablas de conversion numeros
+
+/* undefined -> NaN
+null->0
+true->1
+false->0
+string '' ->0
+string 'hola' ->NaN
+*/
+
+/* tabla conversion booleanos 
+undefined -> false 
+null->false
+string '' -> false 
+NaN ->false
+0->false
+'0' ->true
+'   ' ->true 
+*/
+ 
+//comparaciones entre diferentes tipos 
+
+console.log('2'>1) //true 
+console.log('01'==1)//true
+console.log(true>0)//true
+console.log(false>0)//false 
+console.log('hola'>1)// false
+console.log(null==undefined) //true error de javascript 
+
+console.log(0==false)// true 
+
+
+
+
+
 

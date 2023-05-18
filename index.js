@@ -156,6 +156,189 @@ console.log(null==undefined) //true error de javascript
 
 console.log(0==false)// true 
 
+// if 
+/*
+// if (condicion){
+
+}else if(condicion ){
+
+}else {
+
+}
+*/
+
+// if de linea 
+
+//if (condicion) console.log('mensaje');
+//if('0'==1){console.log('entro');}
+
+//operador ternario 
+//condicion ? operacion verdadera: operacion falsa:
+
+/*  resultado= 4>5 ? 'verdadero' :'falso'
+*/
+
+//while
+
+//while(condicion){}  */
+
+// do while
+
+/* do{} while(condicion)*/
+
+//for 
+
+/* 
+for(comienzo;condicion;incremento){}
+
+for(i=0;i<=10;i++){
+    console.log(i+1)
+}
+
+*/
+
+//switch 
+
+/*
+switch (valor):{
+    case valor1:
+        [break]
+    case valor 2:
+        [break];
+    default:
+            [break];
+
+}
+
+*/
+
+a=2+2
+switch(a){
+    case 3:
+        console.log('el resultado es 3')
+    case 4:
+        console.log('el resultado es 4')
+    default:
+        console.log('ninguno de los anteriores')
+        
+}
+
+
+// hablaremos de js que toca react
+
+// var vs let vs const 
+
+/*var edad=10
+var edad=20
+
+lo que pasa es que var declara dos veces y e sun problema 
+
+*/
+
+/* let 
+
+let edad=5; 
+let edad=20; 
+te dara error, te garantiza que declares una sola vez como debe de ser
+
+*/
+
+
+/* const
+
+const edad=10
+const edad=20
+
+dara error porque no se puede sobrescribir ya que es una constante
+
+*/
+
+// escope de var, let y const 
+
+/*var edad=10; 
+if(true){
+    var edad=20;
+    console.log(edad);}
+console.log(edad)
+*/
+
+
+// arrays 
+let edades =[1,2,3];
+edades=[10,20,30]
+edades.push(70)
+console.log(edades)
+
+//objetos 
+
+const persona ={
+    nombre:"roberto"
+    apellido:"morales"
+    edad:33
+}
+persona.nombre="carlos"
+
+console.log(persona)
+
+
+//funciones 
+
+/*function sumar(num_1,num_2,num_3){
+    console.log(num_1+num_2)
+}
+
+sumar(4,5) */
+
+//funcion flecha
+const sumar =(num_1,num_2,num_3) =>{
+    console.log(num_1+num_2)
+}
+sumar(4,6)
+
+const saludar=()=>{
+    console.log('hola mundo')
+
+}  //sin parametros 
+
+
+//con parametros 
+
+const cuadrado= (base)=>{
+    console.log(base**cuadrado)
+}  //funcion flecha con parametro
+
+
+
+const sumar_dos = (num_1,num_2)=> {
+    return num_1+num_2;
+}
+//para retornar
+const sumar_tres = (num_1,num_2)=> num_1+num_2;
+
+
+// template string 
+
+//backtick
+
+const potencia= (base,altura) => `el resultado de la potencia es ${base**exponente}`;    //$ es interpolacion en javascript
+
+
+//destructuring objetos 
+
+const mascota ={
+    nombre:'tom',
+    edad:5,
+    vivo:true,
+    razas: ['pastor aleman','pitbull']
+}
+
+//si yo quiero acceder al nombre 
+
+console.log(mascota.nombre)
+const{edad,vivo}=mascota //si solo quiero saber dos atributos
+
+
+
 
 
 

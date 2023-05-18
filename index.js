@@ -75,8 +75,8 @@ let mayor=4>5
 //valor especial que no pertenece a ningun tipo de dato 
 //forma un tipo propio separado que contiene solo el valor de null
 
-let edad=null; 
-console.log(edad)
+let edad_245=null; 
+console.log(edad_245)
 
 // en js null no significa un objeto no existente 
 // es un valor especial que significa nada, vacio o desconocido
@@ -272,8 +272,8 @@ console.log(edades)
 //objetos 
 
 const persona ={
-    nombre:"roberto"
-    apellido:"morales"
+    nombre:"roberto",
+    apellido:"morales",
     edad:33
 }
 persona.nombre="carlos"
@@ -337,7 +337,53 @@ const mascota ={
 console.log(mascota.nombre)
 const{edad,vivo}=mascota //si solo quiero saber dos atributos
 
+//obtener data con un tiempo determinado 
 
+const data = [
+    {
+      title: 'Aprendiendo JavaScript',
+      year: '2021',
+      isbn: '994-223-4527',
+      author: 'Roberto Morales'
+    },{
+      title: 'Aprendiendo Python',
+      year: '2018',
+      isbn: '994-555-4527',
+      author: 'Manuel Castro'
+    },{
+      title: 'Aprendiendo Ruby',
+      year: '2019',
+      isbn: '994-223-3333',
+      author: 'Carlos Mejía'
+    }
+  ]
+  function getData(){
+    return new Promise((resolve, reject)=> {
+      setTimeout(()=>{
+        resolve(data);
+      }, 5000)
+    })
+  }
+  
+  getData().then((response)=> console.log(response))
+
+
+
+  /* metodo azucar asincrono  para obtener datos con tiempo muerto 
+  const obtenerpersonajes = async () => {
+  try{
+    const res= await 
+    fetch("https://rickandmortyapi.com/api/character")  //fetch es una funcion para hacer peticiones 
+    const data= await res.json()   // aqui que me lo mande en formato json para que sea mas entendible
+    const results =data.results  //los personajes en este caso estan en results
+    console.log(results)
+  }catch(error){     //este error siempre debe de estar por si hay alguno
+    console.log(error)
+  }
+}
+
+obtenerpersonajes()   //invoco para obtener los personajes   
+*/
 
 
 
